@@ -67,6 +67,7 @@ abstract class GalleryDatabase : RoomDatabase() {
 
                 database.execSQL("CREATE UNIQUE INDEX `index_date_takens_full_path` ON `date_takens` (`full_path`)")
                 database.execSQL("CREATE UNIQUE INDEX `index_favorites_full_path` ON `favorites` (`full_path`)")
+                database.execSQL("CREATE INDEX `index_media_deleted_fs_parent_path` ON `media` (`deleted_ts`, `parent_path`)")
             }
         }
 
