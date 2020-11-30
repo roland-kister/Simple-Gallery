@@ -128,7 +128,7 @@ class Tests {
     fun isSortingAscendingTest() {
         assertEquals(1.isSortingAscending(), true);
         assertEquals(0.isSortingAscending(), true);
-        assertEquals((-1).isSortingAscending(), true);
+        assertEquals((-1).isSortingAscending(), false);
         assertEquals(2.isSortingAscending(), true);
         assertEquals(1024.isSortingAscending(), false);
         assertEquals(SORT_DESCENDING.isSortingAscending(), false);
