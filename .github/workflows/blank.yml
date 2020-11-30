@@ -32,6 +32,6 @@ jobs:
         with:
           java-version: 1.8
       - name: Unit tests
-        run: bash ./gradlew test --stacktrace:  
+        run: bash ./gradlew test --stacktrace  
 
       # Runs a set of commands using the runners shell
