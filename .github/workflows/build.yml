@@ -1,4 +1,4 @@
-name: CI
+name: Test and build APK
 
 on:
   push:
@@ -41,4 +41,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: app
-          path: app/app-debug.apk
+          path: app/build/outputs/apk/foss/debug/gallery-326-foss-debug.apk
